@@ -1,0 +1,52 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.screen-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.screen-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Zero visual movement - instant swap, no transitions */
+  transition: none;
+  transform: none;
+}
+
+.screen-wrapper.active {
+  opacity: 1;
+  z-index: 10;
+  pointer-events: auto;
+  position: relative;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen-wrapper.inactive {
+  display: none;
+  /* Completely hidden - no visual presence */
+}
+
+/* No slide animation - removed */
+.screen-wrapper.inactive.slide-back {
+  display: none;
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 480px) {
+  .app {
+    max-width: 100vw;
+  }
+}
