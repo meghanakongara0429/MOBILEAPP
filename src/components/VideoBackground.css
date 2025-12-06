@@ -29,3 +29,16 @@
   z-index: 1;
   pointer-events: none;
 }
+
+/* Desktop responsive - center video in container */
+@media (min-width: 769px) {
+  .video-background {
+    position: absolute;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .background-video {
+    border-radius: 20px;
+  }
+}

@@ -420,6 +420,94 @@
   font-size: 40px;
 }
 
+/* Desktop responsive */
+@media (min-width: 769px) {
+  .screen {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .purple-section {
+    padding: 40px 30px;
+    min-height: 50vh;
+  }
+
+  .headline {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .greeting {
+    font-size: 36px;
+  }
+
+  .question {
+    font-size: 20px;
+  }
+
+  .purple-button {
+    padding: 18px 40px;
+    font-size: 18px;
+  }
+
+  .phone-input,
+  .text-input {
+    padding: 18px;
+    font-size: 18px;
+  }
+
+  .otp-input {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+  }
+
+  .info-text {
+    font-size: 16px;
+  }
+
+  .input-label {
+    font-size: 16px;
+  }
+
+  .age-option {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .gender-option {
+    width: 120px;
+    height: 120px;
+    font-size: 16px;
+  }
+
+  .gender-icon {
+    font-size: 50px;
+  }
+}
+
+/* Tablet responsive */
+@media (min-width: 481px) and (max-width: 768px) {
+  .purple-section {
+    padding: 35px 25px;
+  }
+
+  .headline {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .greeting {
+    font-size: 32px;
+  }
+}
+
 /* Mobile responsive */
 @media (max-width: 480px) {
   .headline {
